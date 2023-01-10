@@ -15,6 +15,7 @@ Die gewünschten Daten lassen sich über GET-Parameter im Query-String spezifizi
 
 Die Werte aller Parameter müssen URL-codiert sein wie im Beispiel unten verdeutlicht (also z.B. "where=1%3D1" statt "where=1=1").
 
+
 **layer:** 
 
 Komplexer Parameter, der im JSON-Format Details der Anfrage spezifiziert.
@@ -30,7 +31,7 @@ Der SQL-Query dürfte für Nutzer*innen des Regionalatlas Deutschland weitgehend
 Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargestellt (jeweils mit den enthaltenen Variablen/fields)
 
 - Bevölkerungsdichte: ai002_1_5
-- - ai0201: Bevölkerungsdichte (EW je qkm)
+-- ai0201: Bevölkerungsdichte (EW je qkm)
 - - ai0202: Bevölkerungsentwicklung im Jahr je 10.000 EW
 - - ai0208: Anteil der ausländischen Bevölkerung an der Gesamtbevölkerung
 - - ai0209: Lebendgeborene je 10.000 EW
@@ -56,10 +57,12 @@ Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargest
 
 
 **f:**
+
 Output-Format (z.B. "json" oder "html").
 
 
 **outFields:**
+
 Auszugebende Variablen/fields (z.B. "*").
 
 
@@ -68,10 +71,12 @@ Boolsche Angabe, ob Angaben zur Geometrie gesendet werden sollen (z.B. "false").
 
 
 **spatialRel:**
+
 spational relation (z.B. "esriSpatialRelIntersects").
 
 
 **where**
+
 Spezifikation einer gewünschten Teilmenge der Daten (z.B."1=1"" für alle Daten oder "ags2 = 'DG' and jahr2 =  2020")
 
 
