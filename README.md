@@ -16,7 +16,7 @@ Die gewünschten Daten lassen sich über GET-Parameter im Query-String spezifizi
 Die Werte aller Parameter müssen URL-codiert sein wie im Beispiel unten verdeutlicht (also z.B. "where=1%3D1" statt "where=1=1").
 
 
-**layer:** 
+**Parameter** *layer* 
 
 Komplexer Parameter, der im JSON-Format Details der Anfrage spezifiziert.
 In der Regel stellt enthält der layer-Parameter ein Objekt (in geschweiften Klammern), das seinerseits ein Objekt namens "source" enthält. Das source-Objekt wiederum enthält ein Objekt, das zum einen das Objekt "dataSource" und zum anderen ein Datum namens "type" mit dem Wert "dataLayer" enthält. In dataSource wird die gewünschte Tabelle spezifiziert (z.B. für Angaben zur Bevölkerungsdichte "ai002_1_5") - im Folgenden mit dem Platzhalter *tableName* gekennzeichnet.
@@ -28,7 +28,7 @@ Der SQL-Query dürfte für Nutzer*innen des Regionalatlas Deutschland weitgehend
 - 2=Regierungsbezirke und Statistische Regionen, 
 - 3=Kreise und kreisfreie Städte.
 
-Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargestellt (jeweils mit den enthaltenen Variablen/fields)
+Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargestellt (jeweils mit den enthaltenen Variablen/fields, vgl. Parameter *outFields*)
 
 - Bevölkerungsdichte: ai002_1_5
 -- ai0201: Bevölkerungsdichte (EW je qkm)
@@ -56,26 +56,26 @@ Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargest
 - Wahlergebnisse Bundestagswahl: ai005
 
 
-**f:**
+**Parameter** *f*
 
 Output-Format (z.B. "json" oder "html").
 
 
-**outFields:**
+**Parameter** *outFields*
 
 Auszugebende Variablen/fields (z.B. "*").
 
 
-**returnGeometry:**
+**Parameter** *returnGeometry*
 Boolsche Angabe, ob Angaben zur Geometrie gesendet werden sollen (z.B. "false").
 
 
-**spatialRel:**
+**Parameter** *spatialRel*
 
 spational relation (z.B. "esriSpatialRelIntersects").
 
 
-**where**
+**Parameter** *where*
 
 Spezifikation einer gewünschten Teilmenge der Daten (z.B."1=1"" für alle Daten oder "ags2 = 'DG' and jahr2 =  2020")
 
