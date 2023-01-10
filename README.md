@@ -54,6 +54,9 @@ Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargest
 - SGB2-Quote: ai_s_04
 - BIP je Erwerbstätigem: ai017_1
 - Wahlergebnisse Bundestagswahl: ai005
+- Schulabgängerinnen: ai003_2
+- Pflege und Personal: ai014_2
+- Pkw-Dichte: ai013_1
 
 
 **Parameter** *f*
