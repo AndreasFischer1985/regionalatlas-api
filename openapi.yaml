@@ -90,7 +90,7 @@ paths:
         - in: query
           name: returnGeometry
           schema:
-            type: string
+            type: boolean
           description: Boolsche Angabe, ob Angaben zur Geometrie gesendet werden sollen (z.B. 'false').
           example: false
           required: true
