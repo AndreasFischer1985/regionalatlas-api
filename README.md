@@ -43,7 +43,7 @@ layer=%7B%22source%22%3A%7B%22dataSource%22%3A%7B%22geometryType%22%3A%22esriGeo
 Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargestellt (jeweils mit den enthaltenen Variablen/fields, vgl. Parameter *outFields*)
 
 - Bevölkerungsdichte: ai002_1_5
--- ai0201: Bevölkerungsdichte (EW je qkm)
+- - ai0201: Bevölkerungsdichte (EW je qkm)
 - - ai0202: Bevölkerungsentwicklung im Jahr je 10.000 EW
 - - ai0208: Anteil der ausländischen Bevölkerung an der Gesamtbevölkerung
 - - ai0209: Lebendgeborene je 10.000 EW
