@@ -42,7 +42,7 @@ layer=%7B%22source%22%3A%7B%22dataSource%22%3A%7B%22geometryType%22%3A%22esriGeo
 
 Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargestellt (jeweils mit den enthaltenen Variablen/fields, vgl. Parameter *outFields*)
 
-- Bevölkerungsdichte: ai002_1_5
+- Bevölkerungsstand: ai002_1_5
 - - ai0201: Bevölkerungsdichte (EW je qkm)
 - - ai0202: Bevölkerungsentwicklung im Jahr je 10.000 EW
 - - ai0208: Anteil der ausländischen Bevölkerung an der Gesamtbevölkerung
@@ -51,9 +51,24 @@ Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargest
 - - ai0211: Geburten-/Gestorbenenüberschuss je 10.000 EW
 - - ai0212: Wanderungssaldo je 10.000 EW
 
-- Altersdurchschnitt: ai002_4_5 
+- Bevölkerung nach Alter: ai002_2_5
+
+- - ai0203: Bevölkerung 0 bis 17 Jahre
+- - ai0204: Bevölkerung 18 bis 24 Jahre
+- - ai0205: Bevölkerung 25 bis 44 Jahre
+- - ai0206: Bevölkerung 45 bis 64 Jahre
+- - ai0207: Bevölkerung 65 Jahre und älter
+
+- Bevölkerung - Durchschnittsalter: ai002_4_5 
 - - ai0218: Durchschnittsalter der Bevölkerung 
 - - ai0219: das Durchschnittsalter der Mutter bei der Geburt des 1. Kindes)
+
+- Wanderungen nach Geschlecht und- Alter: ai002_3
+- - ai0213: Wanderungssaldo je 10 000: Männer 18 bis 29 Jahre
+- - ai0214: Wanderungssaldo je 10.000: Frauen 18 bis 29 Jahre
+
+- Einbürgerungen: ai002_5
+- - ai0220: Einbürgerungsquote
 
 - Arbeitslosenquote: ai008_1_5 
 - - ai0801: Arbeitslosenquote
@@ -62,13 +77,180 @@ Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargest
 - - ai0808: Anteil Langzeitarbeitslose an Arbeitslosen insgesamt
 - - ai0809: Anteil der ausl. Arbeitslosen an Arbeitslosen insgesamt 
 
-- Verfügbares Einkommen je EW: ai_s_01
-- SGB2-Quote: ai_s_04
-- BIP je Erwerbstätigem: ai017_1
-- Wahlergebnisse Bundestagswahl: ai005
-- Schulabgängerinnen: ai003_2
+- Bruttoinlandsprodukt ai017_1
+- - ai1701 BIP je Erwerbstätigen
+- - ai1702 Veränderung des BIP zum Vorjahr
+- - ai1703 BIP je EW
+
+- Erwerbstätige (ET) nach Wirtschaftsbereichen ai007_1
+- - ai0701: Arbeitsplatzdichte
+- - ai0702: Anteil ET Land- u. Forstwirtschaft, Fischerei
+- - ai0703: Anteil ET Produzierendes Gewerbe
+- - ai0704: Anteil ET Verarbeitendes Gewerbe
+- - ai0705: Anteil ET Baugewerbe
+- - ai0706: Anteil ET Dienstleistungsbereiche
+    ai0707: Anteil ET Handel, Verkehr, Gastgewerbe, Informat., Kommun.
+    ai0708: Anteil ET Finanz-, Versich.-, Unt.-dl., Grundst.-, Wohnungsw.
+    ai0709: Anteil ET Öffentl. u. sonst. Dienstl., Erziehung, Gesundh.
+
+- Betreute Kinder in Tagespflege/Tageseinrichtungen: ai003_1
+- - ai0301: Anteil betreute Kinder 0-2 Jahre in Tageseinrichtungen am 01.03.
+- - ai0302: Anteil betreute Kinder 0-2 Jahre in Tagespflege am 01.03.
+- - ai0303: Anteil betreute Kinder 3-5 Jahre in Tageseinrichtungen am 01.03.
+
+- Schulabgänger/-innen ai003_2
+- - ai0304: Anteil Schulabgänger/-innen mit allgem. Hochschulreife
+- - ai0305: Anteil Schulabgänger/-innen ohne Hauptschulabschluss
+
+- Betreuungsquote ai003_3
+- - ai0306: Betreuungsquote 0 bis 2 Jahre am 01.03.
+- - ai0307: Betreuungsquote 3 bis 5 Jahre am 01.03.
+
+- Erwerbstätige (ET) nach Wirtschaftsbereichen ai007_1
+- - ai0701: Arbeitsplatzdichte
+- - ai0702: Anteil ET Land- u. Forstwirtschaft, Fischerei
+- - ai0703: Anteil ET Produzierendes Gewerbe
+- - ai0704: Anteil ET Verarbeitendes Gewerbe
+- - ai0705: Anteil ET Baugewerbe
+- - ai0706: Anteil ET Dienstleistungsbereiche
+- - ai077: Anteil ET Handel, Verkehr, Gastgewerbe, Informat., Kommun.
+- - ai0708: Anteil ET Finanz-, Versich.-, Unt.-dl., Grundst.-, Wohnungsw.
+- - ai0709: Anteil ET Öffentl. u. sonst. Dienstl., Erziehung, Gesundh.
+
+- Arbeitslosenquote ausgewählte Personengruppen: ai008_2
+- - ai0802: Arbeitslosenquote Männer
+- - ai0803: Arbeitslosenquote Frauen
+- - ai0804: Arbeitslosenquote 15 bis 24 Jahre
+- - ai0805: Arbeitslosenquote Ausländerinnen und Ausländer
+
+- Flächennutzung nach ALKIS: ai001_2_5
+- - ai006: Anteil der Fläche für Siedlung an Gesamtfläche
+- - ai007: Anteil der Fläche für Verkehr an Gesamtfläche
+- - ai008: Anteil der Fläche für Landwirtschaft an Gesamtfläche
+- - ai009: Anteil der Fläche für Wald an Gesamtfläche
+- - ai010: Anteil Sport-, Freizeit-, Erholungsfläche an Gesamtfläche
+- - ai011: Anteil Siedlungs- und Verkehrsfläche an Gesamtfläche
+- - ai013: Siedlungs- und Verkehrsfläche je EW
+- - ai014: Freiraumfläche je EW
+
+- Flächennutzung nach ALB: ai001_5
+- - ai0101: Anteil Siedlungs- und Verkehrsfläche an Gesamtfläche
+- - ai0102: Anteil Erholungsfläche an Gesamtfläche
+- - ai0103: Anteil Landwirtschaftsfläche an Gesamtfläche
+- - ai0104: Anteil Waldfläche an Gesamtfläche
+
+- Elterngeldbezug: aig_018
+- - ai1801: Elterngeldbezug Vater
+
+- Krankenhäuser: ai014_1
+- - ai1401: Krankenhausbettendichte (Betten je 1.000 EW)
+
 - Pflege und Personal: ai014_2
-- Pkw-Dichte: ai013_1
+- - ai1402: Pflegebedürftige je 1.000 EW ab 65 Jahre
+- - ai1403: Personal je 100 Pflegebedürftige in vollstationären Pflege
+- - ai1404: Personal je 100 Pflegebedürftige in ambulanter Pflege
+- - ai1405: Plätze in Pflegeheimen je 1.000 EW ab 65 Jahre
+
+- Investitionen: ai010_1
+- - ai1001: Investitionen je Beschäftigten
+
+- Bruttoentgelte: ai010_2_5
+- - ai1002: Bruttoentgelte je Beschäftigten
+
+- Landwirtschaftl. Betriebe - Viehhaltung: ai009
+- - ai0901: Durchschnittliche Betriebsgröße
+- - ai0902: Rinder je 100 ha landwirtschaftlich genutzter Fläche 
+- - ai0903: Schweine je 100 ha landwirtschaftlich genutzter Fläche 
+
+- Pkw-Dichte: ai_n_08_01 oder ai013_1
+- - ai1301: Pkw-Bestand je 1.000 EW am 01.01.
+
+- Beschäftigte im öffentlichen Bereich: ai015
+- - ai1501: Beschäftigte Bund, Länder, Gemeinden/-verbände je 1.000 EW
+
+- Verfügbares Einkommen je EW: ai_s_01
+- - ai1601: Verfügbares Einkommen je EW
+
+- Armutsgefährdung: ai_s_02
+- - ai2301: Armutsgefährdungsquote (Bundesmedian)
+- - ai2302: Armutsgefährdungsquote (regionaler Median)
+
+- Grundsicherung für Arbeitssuchende (SGB II): ai_s_04
+- - ai2102: SGB II-Quote bis Altersgrenze
+- - ai2108:  Quote erwerbsfähige SGB II-Leistungsberechtigte
+- - ai2109:  Quote erwerbsfähige SGB II-Leistungsberechtigte Frauen
+- - ai2110:  Quote erwerbsfähige SGB II-Leistungsberechtigte Männer
+- - ai2105:  Anteil Empfänger/-innen Arbeitslosengeld II bis 24 Jahre
+- - ai2106:  Anteil Empfänger/-innen Arbeitslosengeld II ab 55 Jahre
+- - ai2107: Anteil Kinder mit Bezug von Sozialgeld
+
+- Beherbergung: ai012_5
+- - ai1201: Durchschnittliche Aufenthaltsdauer
+- - ai1202: Übernachtungen je EW
+
+- Wasserversorgung, Wasserabgabe: ai019_2
+- - 1908: Wasserabgabe je EW und Tag (in Liter)
+
+- Wasserentgelt: ai019_1_5
+- - 1906: verbrauchsabhängig. Entgelt Trinkwasserversorgung pro m³
+- - 1907: verbrauchsunabhängig. Entgelt für Trinkwasserversorgung
+
+- Haushaltsabfälle: ai019
+- - ai1901: Haushaltsabfälle je EW
+- - ai1902: Haus- und Sperrmüll je EW
+- - ai1903: Getrennt erfasste Wertstoffe je EW
+- - ai1904: Abfälle aus der Biotonne je EW
+- - ai1905: Biologisch abbaubare Garten- und Parkabfälle je EW
+
+- Gewerbeanmeldungen: ai004_1
+- - ai0401: Gewerbeanmeldungen je 10.000 EW
+
+- Unternehmensinsolvenzen: ai004_2	
+- - ai0402: Unternehmensinsolvenzen je 10.000 steruerpfl. Unternehmen
+
+- Verfügbares Einkommen: ai016_1
+- - ai1601: Verfügbares Einkommen je EW
+
+- Einkünfte: ai016_2_5
+- - ai1602: Gesamtbetrag der Einkünfte je Steuerpflichtigen
+
+- Straßenverkehrsunfälle bezogen auf EW: ai013_2
+- - ai1302: Straßenverkehrsunfälle je 10.000 EW
+- - ai1304: Getötete bei Straßenverkehrsunfällen je 100.000 EW
+- - ai1305: Verletzte bei Straßenverkehrsunfällen je 100.000 EW
+
+- Bundestagswahl: ai005
+- - ai0501: Zweitstimmenanteil CDU/CSU, Bundestagswahl
+- - ai0502: Zweitstimmenanteil SPD, Bundestagswahl
+- - ai0503: Zweitstimmenanteil FDP, Bundestagswahl
+- - ai0504: Zweitstimmenanteil GRÜNE, Bundestagswahl
+- - ai0505: Zweitstimmenanteil DIE LINKE, Bundestagswahl
+- - ai0507: Zweitstimmenanteil AfD, Bundestagswahl
+- - ai0506: Wahlbeteiligung, Bundestagswahl
+
+- Europawahl: ai006
+- - ai0601: Stimmenanteil CDU/CSU, Europawahl
+- - ai0602: Stimmenanteil SPD, Europawahl
+- - ai0603: Stimmenanteil FDP, Europawahl
+- - ai0604: Stimmenanteil GRÜNE, Europawahl
+- - ai0605: Stimmenanteil DIE LINKE, Europawahl
+- - ai0607: Stimmenanteil AfD, Europawahl
+- - ai0606: Wahlbeteiligung, Europawahl
+
+- Erwerbstätigkeit: ai_z2_2011
+- - ai_z08: Erwerbslosenquote
+- - ai_z09: Erwerbstätigenquote
+- - ai_z10: Erwerbstätigenquote Frauen
+- - ai_z11: Erwerbstätigenquote Männer
+
+- Wohn- und Gebäudezählung: ai_z4_2011
+- - ai_z15: Wohnungen je Wohngebäude
+- - ai_z16: Eigentümerquote
+- - ai_z17: Leerstandsquote
+- - ai_z18: Durchschnittliche Wohnfläche je EW
+- - ai_z19: Durchschnittliche Wohnfläche je Wohnung
+
+
 
 
 **Parameter** *f*
