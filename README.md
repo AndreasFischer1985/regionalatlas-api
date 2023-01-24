@@ -27,7 +27,7 @@ Der SQL-Query dürfte für Nutzer*innen des Regionalatlas Deutschland weitgehend
 - 1=Bundesländer, 
 - 2=Regierungsbezirke und Statistische Regionen, 
 - 3=Kreise und kreisfreie Städte,
-- 4=Gemeinden/Verbandsgemeinden 
+- 5=Gemeinden/Verbandsgemeinden 
 
 Hier ein Beispiel für den Layer-Parameter:
 
