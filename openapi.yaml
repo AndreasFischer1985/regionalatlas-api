@@ -42,7 +42,7 @@ paths:
               - 1=Bundesländer, 
               - 2=Regierungsbezirke und Statistische Regionen, 
               - 3=Kreise und kreisfreie Städte,
-              - 4=Gemeinden/Verbandsgemeinde.
+              - 5=Gemeinden/Verbandsgemeinde.
 
               Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargestellt (jeweils mit den enthaltenen Variablen/fields)
 
