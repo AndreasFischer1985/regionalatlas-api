@@ -41,7 +41,8 @@ paths:
               Der SQL-Query dürfte für Nutzer*innen des Regionalatlas Deutschland weitgehend selbsterklärend sein, wobei man wissen muss dass die Variable *typ* die gewünschte regionale Ebene spezifiziert&#58;
               - 1=Bundesländer, 
               - 2=Regierungsbezirke und Statistische Regionen, 
-              - 3=Kreise und kreisfreie Städte.
+              - 3=Kreise und kreisfreie Städte,
+              - 4=Gemeinden/Verbandsgemeinde.
 
               Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargestellt (jeweils mit den enthaltenen Variablen/fields)
 
