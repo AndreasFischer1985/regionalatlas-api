@@ -19,7 +19,13 @@ Die Werte aller Parameter müssen URL-codiert sein wie im Beispiel unten verdeut
 **Parameter** *layer* 
 
 Komplexer Parameter, der im JSON-Format Details der Anfrage spezifiziert.
-In der Regel stellt enthält der layer-Parameter ein Objekt (in geschweiften Klammern), das seinerseits ein Objekt namens "source" enthält. Das source-Objekt wiederum enthält ein Objekt, das zum einen das Objekt "dataSource" und zum anderen ein Datum namens "type" mit dem Wert "dataLayer" enthält. In dataSource wird die gewünschte Tabelle spezifiziert (z.B. für Angaben zur Bevölkerungsdichte "ai002_1_5") - im Folgenden mit dem Platzhalter *tableName* gekennzeichnet.
+In der Regel enthält der layer-Parameter ein Objekt (in geschweiften Klammern), das seinerseits ein Objekt namens "source" enthält. Das source-Objekt wiederum enthält ein Objekt, das zum einen das Objekt "dataSource" und zum anderen ein Datum namens "type" mit dem Wert "dataLayer" enthält. In dataSource wird die gewünschte Tabelle spezifiziert (z.B. für Angaben zur Bevölkerungsdichte "ai002_1_5") - im Folgenden auch mit dem Platzhalter *tableName* gekennzeichnet.
+
+Hier ein Beispiel für den Layer-Parameter:
+
+```
+layer={"source":{"dataSource":{"geometryType":"esriGeometryPolygon","workspaceId":"gdb","query":"SELECT * FROM verwaltungsgrenzen_gesamt LEFT OUTER JOIN ai002_1_5 ON ags = ags2 and jahr = jahr2 WHERE typ = 1 AND jahr = 2020 AND (jahr2 = 2020 OR jahr2 IS NULL)","oidFields":"id","spatialReference":{"wkid":25832},"type":"queryTable"},"type":"dataLayer"}}
+```
 
 dataSource kann unterschiedlich aufgebaut sein und enthält entweder (a) Daten namens "dataSourceName" (mit einem Wert wie z.B. "regionalatlas.*tableName*"), "workspaceId (z.B.  "gdb") und "type" (z.B. "table") oder (b) Daten namens "geometryType" (z.B. "esriGeometryPolygon"), "workspaceId" (z.B. "gdb"), "query" (mit einem SQL-Query, z.B. "SELECT * FROM verwaltungsgrenzen_gesamt LEFT OUTER JOIN *tableName* ON ags = ags2 and jahr = jahr2 WHERE typ = 3 AND jahr = 2020 AND (jahr2 = 2020 OR jahr2 IS NULL)"), "oidFields" (z.B. "id"), "spatialReference" (mit einem Objekt, das wiederum das Datum "wkid" mit einem Wert wie 25832 umfasst), und "type":"queryTable".
 
@@ -28,12 +34,6 @@ Der SQL-Query dürfte für Nutzer*innen des Regionalatlas Deutschland weitgehend
 - 2=Regierungsbezirke und Statistische Regionen, 
 - 3=Kreise und kreisfreie Städte,
 - 5=Gemeinden/Verbandsgemeinden 
-
-Hier ein Beispiel für den Layer-Parameter:
-
-```
-layer={"source":{"dataSource":{"geometryType":"esriGeometryPolygon","workspaceId":"gdb","query":"SELECT * FROM verwaltungsgrenzen_gesamt LEFT OUTER JOIN ai002_1_5 ON ags = ags2 and jahr = jahr2 WHERE typ = 1 AND jahr = 2020 AND (jahr2 = 2020 OR jahr2 IS NULL)","oidFields":"id","spatialReference":{"wkid":25832},"type":"queryTable"},"type":"dataLayer"}}
-```
 
 Bzw. nach URL-Codierung:
 
