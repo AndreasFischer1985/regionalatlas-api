@@ -41,215 +41,191 @@ Bzw. nach URL-Codierung:
 layer=%7B%22source%22%3A%7B%22dataSource%22%3A%7B%22geometryType%22%3A%22esriGeometryPolygon%22%2C%22workspaceId%22%3A%22gdb%22%2C%22query%22%3A%22SELECT%20*%20FROM%20verwaltungsgrenzen_gesamt%20LEFT%20OUTER%20JOIN%20ai002_1_5%20ON%20ags%20%3D%20ags2%20and%20jahr%20%3D%20jahr2%20WHERE%20typ%20%3D%201%20AND%20jahr%20%3D%202020%20AND%20(jahr2%20%3D%202020%20OR%20jahr2%20IS%20NULL)%22%2C%22oidFields%22%3A%22id%22%2C%22spatialReference%22%3A%7B%22wkid%22%3A25832%7D%2C%22type%22%3A%22queryTable%22%7D%2C%22type%22%3A%22dataLayer%22%7D%7D
 ```
 
-Gültige Einträge für die *tableName* werden im Folgenden auszugsweise dargestellt (jeweils mit den enthaltenen Variablen/fields, vgl. Parameter *outFields*)
+Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas.statistikportal.de/taskrunner/services.json](https://regionalatlas.statistikportal.de/taskrunner/services.json) und werden im Folgenden tabellarisch dargestellt (*tableName* findet sich in der Spalte "table-code", die enthaltenen Variablen/fields - vgl. Parameter *outFields* - in der Spalte "attribute-code").
 
-- Bevölkerungsstand: ai002_1_5
-- - ai0201: Bevölkerungsdichte (EW je qkm)
-- - ai0202: Bevölkerungsentwicklung im Jahr je 10.000 EW
-- - ai0208: Anteil der ausländischen Bevölkerung an der Gesamtbevölkerung
-- - ai0209: Lebendgeborene je 10.000 EW
-- - ai0210: Gestorbene je 10.000 EW
-- - ai0211: Geburten-/Gestorbenenüberschuss je 10.000 EW
-- - ai0212: Wanderungssaldo je 10.000 EW
+|attribute-title|attibute-code|attribute-unit|table-title|table-code|category|
+|---|---|---|---|---|---|
+|Anteil der Fläche für Siedlung an Gesamtfläche|AI0106|Prozent|Flächennutzung nach ALKIS|AI001-2-5|Gebiet und Fläche|
+|Anteil der Fläche für Verkehr an Gesamtfläche|AI0107|Prozent|Flächennutzung nach ALKIS|AI001-2-5|Gebiet und Fläche|
+|Anteil der Fläche für Landwirtschaft an Gesamtfläche|AI0108|Prozent|Flächennutzung nach ALKIS|AI001-2-5|Gebiet und Fläche|
+|Anteil der Fläche für Wald an Gesamtfläche|AI0109|Prozent|Flächennutzung nach ALKIS|AI001-2-5|Gebiet und Fläche|
+|Anteil Sport-, Freizeit-, Erholungsfläche an Gesamtfläche|AI0110|Prozent|Flächennutzung nach ALKIS|AI001-2-5|Gebiet und Fläche|
+|Anteil Siedlungs- und Verkehrsfläche an Gesamtfläche|AI0111|Prozent|Flächennutzung nach ALKIS|AI001-2-5|Gebiet und Fläche|
+|Siedlungs- und Verkehrsfläche je EW|AI0113|qm|Flächennutzung nach ALKIS|AI001-2-5|Gebiet und Fläche|
+|Freiraumfläche je EW|AI0114|qm|Flächennutzung nach ALKIS|AI001-2-5|Gebiet und Fläche|
+|Anteil Siedlungs- und Verkehrsfläche an Gesamtfläche|AI0101|Prozent|Flächennutzung nach ALB|AI001-5|Gebiet und Fläche|
+|Anteil Erholungsfläche an Gesamtfläche|AI0102|Prozent|Flächennutzung nach ALB|AI001-5|Gebiet und Fläche|
+|Anteil Landwirtschaftsfläche an Gesamtfläche|AI0103|Prozent|Flächennutzung nach ALB|AI001-5|Gebiet und Fläche|
+|Anteil Waldfläche an Gesamtfläche|AI0104|Prozent|Flächennutzung nach ALB|AI001-5|Gebiet und Fläche|
+|Bevölkerungsdichte (EW je qkm)|AI0201|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Bevölkerungsentwicklung im Jahr je 10.000 EW|AI0202|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Anteil der ausländischen Bevölkerung  an der Gesamtbevölkerung|AI0208|Prozent|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Lebendgeborene je 10.000 EW|AI0209|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Gestorbene je 10.000 EW|AI0210|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Geburten-/Gestorbenenüberschuss je 10.000 EW|AI0211|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Wanderungssaldo je 10.000 EW|AI0212|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Bevölkerung 0 bis 17 Jahre|AI0203|Prozent|Bevölkerung nach Alter|AI002-2-5|Bevölkerung|
+|Bevölkerung 18 bis 24 Jahre|AI0204|Prozent|Bevölkerung nach Alter|AI002-2-5|Bevölkerung|
+|Bevölkerung 25 bis 44 Jahre|AI0205|Prozent|Bevölkerung nach Alter|AI002-2-5|Bevölkerung|
+|Bevölkerung 45 bis 64 Jahre|AI0206|Prozent|Bevölkerung nach Alter|AI002-2-5|Bevölkerung|
+|Bevölkerung 65 Jahre und älter|AI0207|Prozent|Bevölkerung nach Alter|AI002-2-5|Bevölkerung|
+|Wanderungssaldo je 10 000: Männer 18 bis 29 Jahre|AI0213|Anzahl|Wanderungen nach Geschlecht und- Alter|AI002-3|Bevölkerung|
+|Wanderungssaldo je 10.000: Frauen 18 bis 29 Jahre|AI0214|Anzahl|Wanderungen nach Geschlecht und- Alter|AI002-3|Bevölkerung|
+|Durchschnittsalter der Bevölkerung|AI0218|Anzahl|Bevölkerung - Durchschnittsalter|AI002-4-5|Bevölkerung|
+|Durchschnittsalter der Mutter bei der Geburt des 1. Kindes|AI0219|Anzahl|Bevölkerung - Durchschnittsalter|AI002-4-5|Bevölkerung|
+|Einbürgerungsquote|AI0220|Prozent|Einbürgerungen|AI002-5|Bevölkerung|
+|Anteil betreute Kinder 0-2 Jahre in Tageseinrichtungen am 01.03.|AI0301|Prozent|Betreute Kinder in Tagespflege/Tageseinrichtungen|AI003-1|Bildung|
+|Anteil betreute Kinder 0-2 Jahre in Tagespflege am 01.03.|AI0302|Prozent|Betreute Kinder in Tagespflege/Tageseinrichtungen|AI003-1|Bildung|
+|Anteil betreute Kinder 3-5 Jahre in Tageseinrichtungen am 01.03.|AI0303|Prozent|Betreute Kinder in Tagespflege/Tageseinrichtungen|AI003-1|Bildung|
+|Anteil Schulabgänger/-innen mit allgem. Hochschulreife|AI0304|Prozent|Schulabgänger/-innen|AI003-2|Bildung|
+|Anteil Schulabgänger/-innen ohne Hauptschulabschluss|AI0305|Prozent|Schulabgänger/-innen|AI003-2|Bildung|
+|Betreuungsquote 0 bis 2 Jahre am 01.03.|AI0306|Prozent|Betreuungsquote|AI003-3|Bildung|
+|Betreuungsquote 3 bis 5 Jahre am 01.03.|AI0307|Prozent|Betreuungsquote|AI003-3|Bildung|
+|Gewerbeanmeldungen je 10.000 EW|AI0401|Anzahl|Gewerbeanmeldungen|AI004-1|Unternehmen|
+|Unternehmensinsolvenzen je 10.000 steuerpfl. Unternehmen|AI0402|Anzahl|Unternehmensinsolvenzen|AI004-2|Unternehmen|
+|Zweitstimmenanteil CDU/CSU, Bundestagswahl|AI0501|Prozent|Bundestagswahl|AI005|Wahlen|
+|Zweitstimmenanteil SPD, Bundestagswahl|AI0502|Prozent|Bundestagswahl|AI005|Wahlen|
+|Zweitstimmenanteil FDP, Bundestagswahl|AI0503|Prozent|Bundestagswahl|AI005|Wahlen|
+|Zweitstimmenanteil GRÜNE, Bundestagswahl|AI0504|Prozent|Bundestagswahl|AI005|Wahlen|
+|Zweitstimmenanteil DIE LINKE, Bundestagswahl|AI0505|Prozent|Bundestagswahl|AI005|Wahlen|
+|Zweitstimmenanteil AfD, Bundestagswahl|AI0507|Prozent|Bundestagswahl|AI005|Wahlen|
+|Wahlbeteiligung, Bundestagswahl|AI0506|Prozent|Bundestagswahl|AI005|Wahlen|
+|Stimmenanteil CDU/CSU, Europawahl|AI0601|Prozent|Europawahl|AI006|Wahlen|
+|Stimmenanteil SPD, Europawahl|AI0602|Prozent|Europawahl|AI006|Wahlen|
+|Stimmenanteil FDP, Europawahl|AI0603|Prozent|Europawahl|AI006|Wahlen|
+|Stimmenanteil GRÜNE, Europawahl|AI0604|Prozent|Europawahl|AI006|Wahlen|
+|Stimmenanteil DIE LINKE, Europawahl|AI0605|Prozent|Europawahl|AI006|Wahlen|
+|Stimmenanteil AfD, Europawahl|AI0607|Prozent|Europawahl|AI006|Wahlen|
+|Wahlbeteiligung, Europawahl|AI0606|Prozent|Europawahl|AI006|Wahlen|
+|Arbeitsplatzdichte|AI0701|Anzahl|Erwerbstätige (ET) nach Wirtschaftsbereichen|AI007-1|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil ET Land- u. Forstwirtschaft, Fischerei|AI0702|Prozent|Erwerbstätige (ET) nach Wirtschaftsbereichen|AI007-1|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil ET Produzierendes Gewerbe|AI0703|Prozent|Erwerbstätige (ET) nach Wirtschaftsbereichen|AI007-1|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil ET Verarbeitendes Gewerbe|AI0704|Prozent|Erwerbstätige (ET) nach Wirtschaftsbereichen|AI007-1|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil ET Baugewerbe|AI0705|Prozent|Erwerbstätige (ET) nach Wirtschaftsbereichen|AI007-1|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil ET Dienstleistungsbereiche|AI0706|Prozent|Erwerbstätige (ET) nach Wirtschaftsbereichen|AI007-1|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil ET Handel, Verkehr, Gastgewerbe, Informat., Kommun.|AI0707|Prozent|Erwerbstätige (ET) nach Wirtschaftsbereichen|AI007-1|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil ET Finanz-, Versich.-, Unt.-dl., Grundst.-, Wohnungsw.|AI0708|Prozent|Erwerbstätige (ET) nach Wirtschaftsbereichen|AI007-1|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil ET Öffentl. u. sonst. Dienstl., Erziehung, Gesundh.|AI0709|Prozent|Erwerbstätige (ET) nach Wirtschaftsbereichen|AI007-1|Erwerbstätigkeit und Arbeitslosigkeit|
+|Arbeitslosenquote|AI0801|Prozent|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil Arbeitslose 15-24 Jahre an Arbeitslosen insgesamt|AI0806|Prozent|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil Arbeitslose 55-64 Jahre an Arbeitslosen insgesamt|AI0807|Prozent|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil Langzeitarbeitslose an Arbeitslosen insgesamt|AI0808|Prozent|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil der ausl. Arbeitslosen an Arbeitslosen insgesamt |AI0809|Prozent|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
+|Arbeitslosenquote Männer|AI0802|Prozent|Arbeitslosenquote ausgewählte Personengruppen|AI008-2|Erwerbstätigkeit und Arbeitslosigkeit|
+|Arbeitslosenquote Frauen|AI0803|Prozent|Arbeitslosenquote ausgewählte Personengruppen|AI008-2|Erwerbstätigkeit und Arbeitslosigkeit|
+|Arbeitslosenquote 15 bis 24 Jahre|AI0804|Prozent|Arbeitslosenquote ausgewählte Personengruppen|AI008-2|Erwerbstätigkeit und Arbeitslosigkeit|
+|Arbeitslosenquote Ausländerinnen und Ausländer|AI0805|Prozent|Arbeitslosenquote ausgewählte Personengruppen|AI008-2|Erwerbstätigkeit und Arbeitslosigkeit|
+|Durchschnittliche Betriebsgröße|AI0901|ha|Landwirtschaftl. Betriebe - Viehhaltung|AI009|Landwirtschaft|
+|Rinder je 100 ha landwirtschaftlich genutzter Fläche|AI0902|Anzahl|Landwirtschaftl. Betriebe - Viehhaltung|AI009|Landwirtschaft|
+|Schweine je 100 ha landwirtschaftlich genutzter Fläche|AI0903|Anzahl|Landwirtschaftl. Betriebe - Viehhaltung|AI009|Landwirtschaft|
+|Investitionen je Beschäftigten|AI1001|Tsd. EUR|Investitionen|AI010-1|Industrie|
+|Bruttoentgelte je Beschäftigten|AI1002|Tsd. EUR|Bruttoentgelte|AI010-2-5|Industrie|
+|Anteil neue Wohngebäude mit 1 oder 2 Wohnungen|AI1101|Prozent|Bautätigkeit und Wohnen|AI011-5|Bauen und Wohnen|
+|Durchschnittliche Aufenthaltsdauer|AI1201|Tage|Beherbergung|AI012-5|Tourismus|
+|Übernachtungen je EW|AI1202|Anzahl|Beherbergung|AI012-5|Tourismus|
+|Pkw-Bestand je 1.000 EW am 01.01.|AI1301|Anzahl|Pkw-Dichte|AI013-1|Verkehr|
+|Straßenverkehrsunfälle je 10.000 EW|AI1302|Anzahl|Straßenverkehrsunfälle bezogen auf EW|AI013-2|Verkehr|
+|Getötete bei Straßenverkehrsunfällen je 100.000 EW|AI1304|Anzahl|Straßenverkehrsunfälle bezogen auf EW|AI013-2|Verkehr|
+|Verletzte bei Straßenverkehrsunfällen je 100.000 EW|AI1305|Anzahl|Straßenverkehrsunfälle bezogen auf EW|AI013-2|Verkehr|
+|Straßenverkehrsunfälle je 10.000 Kfz|AI1303|Anzahl|Straßenverkehrsunfälle bezogen auf Kfz|AI013-3|Verkehr|
+|Krankenhausbettendichte (Betten je 1.000 EW)|AI1401|Anzahl|Krankenhäuser|AI014-1|Gesundheits- und Sozialwesen|
+|Pflegebedürftige je 1.000 EW ab 65 Jahre|AI1402|Anzahl|Pflege und Personal|AI014-2|Gesundheits- und Sozialwesen|
+|Personal je 100 Pflegebedürftige in vollstationären Pflege|AI1403|Anzahl|Pflege und Personal|AI014-2|Gesundheits- und Sozialwesen|
+|Personal je 100 Pflegebedürftige in ambulanter Pflege|AI1404|Anzahl|Pflege und Personal|AI014-2|Gesundheits- und Sozialwesen|
+|Plätze in Pflegeheimen je 1.000 EW ab 65 Jahre|AI1405|Anzahl|Pflege und Personal|AI014-2|Gesundheits- und Sozialwesen|
+|Beschäftigte Bund, Länder, Gemeinden/-verbände je 1.000 EW|AI1501|Anzahl|Beschäftigte im öffentlichen Bereich|AI015|Öffentliche Haushalte|
+|Verfügbares Einkommen je EW|AI1601|EUR|Verfügbares Einkommen|AI016-1|Verdienste und Einkommen|
+|Gesamtbetrag der Einkünfte je Steuerpflichtigen|AI1602|Tsd. EUR|Einkünfte|AI016-2-5|Verdienste und Einkommen|
+|BIP je Erwerbstätigen|AI1701|EUR|Bruttoinlandsprodukt (BIP)|AI017-1|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|Veränderung des BIP zum Vorjahr|AI1702|Prozent|Bruttoinlandsprodukt (BIP)|AI017-1|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|BIP je EW|AI1703|EUR|Bruttoinlandsprodukt (BIP)|AI017-1|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|BWS Land- und Forstwirtschaft, Fischerei|AI1705|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|BWS Produzierendes Gewerbe|AI1706|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|BWS Verarbeitendes Gewerbe|AI1707|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|BWS Baugewerbe|AI1708|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|BWS Dienstleistungsbereiche|AI1709|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|BWS Handel, Verkehr, Gastgewerbe, Information, Kommunikation|AI1710|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|BWS Finanz-, Versicherg., Untern.-dl., Grundst.-,Wohnungsw.|AI1711|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|BWS Öffentl. u. sonst. Dienstleister, Erziehung, Gesundheit|AI1712|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|Haushaltsabfälle je EW|AI1901|kg|Haushaltsabfälle|AI019|Umwelt|
+|Haus- und Sperrmüll je EW|AI1902|kg|Haushaltsabfälle|AI019|Umwelt|
+|Getrennt erfasste Wertstoffe je EW|AI1903|kg|Haushaltsabfälle|AI019|Umwelt|
+|Abfälle aus der Biotonne je EW|AI1904|kg|Haushaltsabfälle|AI019|Umwelt|
+|Biologisch abbaubare Garten- und Parkabfälle je EW|AI1905|kg|Haushaltsabfälle|AI019|Umwelt|
+|verbrauchsabhängig. Entgelt Trinkwasserversorgung pro m³|AI1906|EUR|Wasserentgelt|AI019-1-5|Umwelt|
+|verbrauchsunabhängig. Entgelt für Trinkwasserversorgung|AI1907|EUR|Wasserentgelt|AI019-1-5|Umwelt|
+|Wasserabgabe je EW und Tag (in Liter)|AI1908|l|Wasserversorgung, Wasserabgabe|AI019-2|Umwelt|
+|Elterngeldbezug Vater|AI1801|Prozent|Elterngeldbezug|AIG-018|Gender|
+|Anteil betreute Kinder 0-2 Jahre in Tageseinrichtungen am 01.03.|AI0301|Prozent|Kinderbetreuung|AIG-03-1|Gender|
+|Anteil betreute Kinder 0-2 Jahre in Tagespflege am 01.03.|AI0302|Prozent|Kinderbetreuung|AIG-03-1|Gender|
+|Anteil männl. Schulabgänger mit allgemeiner Hochschulreife|AI0310|Prozent|Bildung|AIG-03-2|Gender|
+|Anteil männlicher Schulabgänger ohne Hauptschulabschluss|AI0308|Prozent|Bildung|AIG-03-2|Gender|
+|Anteil männlicher Schulabgänger mit Hauptschulabschluss|AI0309|Prozent|Bildung|AIG-03-2|Gender|
+|Arbeitslosenquote Männer|AI0802|Prozent|Arbeitslosigkeit|AIG-08-2|Gender|
+|Arbeitslosenquote Frauen|AI0803|Prozent|Arbeitslosigkeit|AIG-08-2|Gender|
+|Grundsicherungsquote Männer ab 65 Jahre|AI2203|Prozent|Grundsicherung|AIG-22|Gender|
+|Grundsicherungsquote Frauen ab 65 Jahre|AI2204|Prozent|Grundsicherung|AIG-22|Gender|
+|Index Grundsicherungsquote|AI2205|Prozent|Grundsicherung|AIG-22|Gender|
+|Anteil Männer am pädag. Personal in Kindertageseinrichtungen am 01.03.|AI2401|Prozent|Männliches pädagogisches Personal|AIG-24|Gender|
+|Anteil Siedlungs- und Verkehrsfläche an Gesamtfläche|AI0111|Prozent|Flächennutzung nach ALKIS|AI-N-01-2-5|Nachhaltigkeit|
+|Veränderung der Siedlungs- und Verkehrsfläche|AI0112|Prozent|Flächennutzung nach ALKIS|AI-N-01-2-5|Nachhaltigkeit|
+|4-jährige Veränderung der Siedlungs- und Verkehrsfläche je EW|AI0115|qm|Flächennutzung nach ALKIS (4-jährige Veränderung)|AI-N-01-3-5|Nachhaltigkeit|
+|4-jährige Veränderung der Siedlungsfläche|AI0116|ha|Flächennutzung nach ALKIS (4-jährige Veränderung)|AI-N-01-3-5|Nachhaltigkeit|
+|4-jährige Veränderung der Verkehrsfläche|AI0117|ha|Flächennutzung nach ALKIS (4-jährige Veränderung)|AI-N-01-3-5|Nachhaltigkeit|
+|4-jährige Veränderung der Freiraumfläche je EW|AI0118|qm|Flächennutzung nach ALKIS (4-jährige Veränderung)|AI-N-01-3-5|Nachhaltigkeit|
+|Anteil Siedlungs- und Verkehrsfläche an Gesamtfläche|AI0101|Prozent|Flächennutzung nach ALB|AI-N-01-5|Nachhaltigkeit|
+|Veränderung der Siedlungs- und Verkehrsfläche|AI0105|Prozent|Flächennutzung nach ALB|AI-N-01-5|Nachhaltigkeit|
+|Ökologischer Landbau|AI0904|Prozent|Landbewirtschaftung|AI-N-02|Nachhaltigkeit|
+|Wanderungssaldo je 10.000 EW|AI0212|Anzahl|Bevölkerung - Wanderung|AI-N-03|Nachhaltigkeit|
+|Altenquotient|AI0215|Anzahl|Bevölkerung - Alterung|AI-N-04|Nachhaltigkeit|
+|Jugendquotient|AI0216|Anzahl|Bevölkerung - Alterung|AI-N-04|Nachhaltigkeit|
+|Gesamtquotient|AI0217|Anzahl|Bevölkerung - Alterung|AI-N-04|Nachhaltigkeit|
+|Ganztagsbetreuung 0 bis 2 Jahre am 01.03.|AI0311|Prozent|Ganztagsbetreuung von Kindern|AI-N-05|Nachhaltigkeit|
+|Ganztagsbetreuung 3 bis 5 Jahre am 01.03.|AI0312|Prozent|Ganztagsbetreuung von Kindern|AI-N-05|Nachhaltigkeit|
+|Anteil Schulabgänger/-innen mit allgem. Hochschulreife|AI0304|Prozent|Bildung|AI-N-06|Nachhaltigkeit|
+|Anteil Schulabgänger/-innen ohne Hauptschulabschluss|AI0305|Prozent|Bildung|AI-N-06|Nachhaltigkeit|
+|Arbeitslosenquote 15 bis 24 Jahre|AI0804|Prozent|Arbeitslosigkeit junger Menschen|AI-N-07|Nachhaltigkeit|
+|Pkw-Bestand je 1.000 EW am 01.01.|AI1301|Anzahl|Pkw-Dichte|AI-N-08-01|Nachhaltigkeit|
+|Getötete bei Straßenverkehrsunfällen je 100.000 EW|AI1304|Anzahl|Straßenverkehr|AI-N-08-02|Nachhaltigkeit|
+|Armutsgefährdungsquote (Bundesmedian)|AI2301|Prozent|Armutsgefährdung|AI-N-09|Nachhaltigkeit|
+|BIP je EW|AI1703|EUR|Wirtschaftliche Leistungsfähigkeit - BIP je EW|AI-N-10|Nachhaltigkeit|
+|BIP je Arbeitsstunde|AI1704|EUR|Wirtschaftliche Leistungsfähigkeit - BIP je Arbeitsst.|AI-N-11|Nachhaltigkeit|
+|Haushaltsabfälle je EW|AI1901|kg|Umwelt|AI-N-12|Nachhaltigkeit|
+|Verfügbares Einkommen je EW|AI1601|EUR|Verfügbares Einkommen je EW|AI-S-01|Soziales|
+|Armutsgefährdungsquote (Bundesmedian)|AI2301|Prozent|Armutsgefährdung|AI-S-02|Soziales|
+|Armutsgefährdungsquote (regionaler Median)|AI2302|Prozent|Armutsgefährdung|AI-S-02|Soziales|
+|Mindestsicherungsquote|AI2001|Prozent|Mindestsicherungsleistungen|AI-S-03|Soziales|
+|SGB II-Quote bis Altersgrenze|AI2102|Prozent|Grundsicherung für Arbeitssuchende (SGB II)|AI-S-04|Soziales|
+|Quote erwerbsfähige SGB II-Leistungsberechtigte|AI2108|Prozent|Grundsicherung für Arbeitssuchende (SGB II)|AI-S-04|Soziales|
+|Quote erwerbsfähige SGB II-Leistungsberechtigte Frauen|AI2109|Prozent|Grundsicherung für Arbeitssuchende (SGB II)|AI-S-04|Soziales|
+|Quote erwerbsfähige SGB II-Leistungsberechtigte Männer|AI2110|Prozent|Grundsicherung für Arbeitssuchende (SGB II)|AI-S-04|Soziales|
+|Anteil Empfänger/-innen Arbeitslosengeld II bis 24 Jahre|AI2105|Prozent|Grundsicherung für Arbeitssuchende (SGB II)|AI-S-04|Soziales|
+|Anteil Empfänger/-innen Arbeitslosengeld II ab 55 Jahre|AI2106|Prozent|Grundsicherung für Arbeitssuchende (SGB II)|AI-S-04|Soziales|
+|Anteil Kinder mit Bezug von Sozialgeld|AI2107|Prozent|Grundsicherung für Arbeitssuchende (SGB II)|AI-S-04|Soziales|
+|Grundsicherungsquote ab Altersgrenze|AI2201|Prozent|Grundsicherung im Alter und bei Erwerbsminderung|AI-S-05|Soziales|
+|Grundsicherungsquote wegen Erwerbsminderung|AI2202|Prozent|Grundsicherung im Alter und bei Erwerbsminderung|AI-S-05|Soziales|
+|Grundsicherungsquote Männer ab Altersgrenze|AI2203|Prozent|Grundsicherung im Alter und bei Erwerbsminderung|AI-S-05|Soziales|
+|Grundsicherungsquote Frauen ab Altersgrenze|AI2204|Prozent|Grundsicherung im Alter und bei Erwerbsminderung|AI-S-05|Soziales|
+|Durchschnittsalter Gesamtbevölkerung|AI-Z01|Anzahl|Bevölkerung - Durchschnittsalter - Migrationshintergrund|AI-Z1-2011|Zensus|
+|Durchschnittsalter weibliche Bevölkerung|AI-Z02|Anzahl|Bevölkerung - Durchschnittsalter - Migrationshintergrund|AI-Z1-2011|Zensus|
+|Durchschnittsalter männliche Bevölkerung|AI-Z03|Anzahl|Bevölkerung - Durchschnittsalter - Migrationshintergrund|AI-Z1-2011|Zensus|
+|Anteil Personen mit MHG an der Gesamtbevölkerung|AI-Z04|Prozent|Bevölkerung - Durchschnittsalter - Migrationshintergrund|AI-Z1-2011|Zensus|
+|Anteil Personen mit MHG 0 bis 19 Jahre|AI-Z05|Prozent|Bevölkerung - Durchschnittsalter - Migrationshintergrund|AI-Z1-2011|Zensus|
+|Anteil Personen mit MHG 20 bis 59 Jahre|AI-Z06|Prozent|Bevölkerung - Durchschnittsalter - Migrationshintergrund|AI-Z1-2011|Zensus|
+|Anteil Personen mit MHG 60 Jahre und älter|AI-Z07|Prozent|Bevölkerung - Durchschnittsalter - Migrationshintergrund|AI-Z1-2011|Zensus|
+|Erwerbslosenquote|AI-Z08|Prozent|Erwerbstätigkeit|AI-Z2-2011|Zensus|
+|Erwerbstätigenquote|AI-Z09|Prozent|Erwerbstätigkeit|AI-Z2-2011|Zensus|
+|Erwerbstätigenquote Frauen|AI-Z10|Prozent|Erwerbstätigkeit|AI-Z2-2011|Zensus|
+|Erwerbstätigenquote Männer|AI-Z11|Prozent|Erwerbstätigkeit|AI-Z2-2011|Zensus|
+|Durchschnittliche Haushaltsgröße|AI-Z12|Anzahl|Haushalte|AI-Z3-2011|Zensus|
+|Anteil Einpersonenhaushalte|AI-Z13|Prozent|Haushalte|AI-Z3-2011|Zensus|
+|Haushalte mit Kindern|AI-Z14|Prozent|Haushalte|AI-Z3-2011|Zensus|
+|Wohnungen je Wohngebäude|AI-Z15|Anzahl|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
+|Eigentümerquote|AI-Z16|Prozent|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
+|Leerstandsquote|AI-Z17|Prozent|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
+|Durchschnittliche Wohnfläche je EW|AI-Z18|m²|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
+|Durchschnittliche Wohnfläche je Wohnung|AI-Z19|m²|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
 
-- Bevölkerung nach Alter: ai002_2_5
-
-- - ai0203: Bevölkerung 0 bis 17 Jahre
-- - ai0204: Bevölkerung 18 bis 24 Jahre
-- - ai0205: Bevölkerung 25 bis 44 Jahre
-- - ai0206: Bevölkerung 45 bis 64 Jahre
-- - ai0207: Bevölkerung 65 Jahre und älter
-
-- Bevölkerung - Durchschnittsalter: ai002_4_5 
-- - ai0218: Durchschnittsalter der Bevölkerung 
-- - ai0219: das Durchschnittsalter der Mutter bei der Geburt des 1. Kindes)
-
-- Wanderungen nach Geschlecht und- Alter: ai002_3
-- - ai0213: Wanderungssaldo je 10 000: Männer 18 bis 29 Jahre
-- - ai0214: Wanderungssaldo je 10.000: Frauen 18 bis 29 Jahre
-
-- Einbürgerungen: ai002_5
-- - ai0220: Einbürgerungsquote
-
-- Arbeitslosenquote: ai008_1_5 
-- - ai0801: Arbeitslosenquote
-- - ai0806: Anteil Arbeitslose 15-24 Jahre an Arbeitslosen insgesamt
-- - ai0807: Anteil Arbeitslose 55-64 Jahre an Arbeitslosen insgesamt
-- - ai0808: Anteil Langzeitarbeitslose an Arbeitslosen insgesamt
-- - ai0809: Anteil der ausl. Arbeitslosen an Arbeitslosen insgesamt 
-
-- Bruttoinlandsprodukt ai017_1
-- - ai1701 BIP je Erwerbstätigen
-- - ai1702 Veränderung des BIP zum Vorjahr
-- - ai1703 BIP je EW
-
-- Erwerbstätige (ET) nach Wirtschaftsbereichen ai007_1
-- - ai0701: Arbeitsplatzdichte
-- - ai0702: Anteil ET Land- u. Forstwirtschaft, Fischerei
-- - ai0703: Anteil ET Produzierendes Gewerbe
-- - ai0704: Anteil ET Verarbeitendes Gewerbe
-- - ai0705: Anteil ET Baugewerbe
-- - ai0706: Anteil ET Dienstleistungsbereiche
-    ai0707: Anteil ET Handel, Verkehr, Gastgewerbe, Informat., Kommun.
-    ai0708: Anteil ET Finanz-, Versich.-, Unt.-dl., Grundst.-, Wohnungsw.
-    ai0709: Anteil ET Öffentl. u. sonst. Dienstl., Erziehung, Gesundh.
-
-- Betreute Kinder in Tagespflege/Tageseinrichtungen: ai003_1
-- - ai0301: Anteil betreute Kinder 0-2 Jahre in Tageseinrichtungen am 01.03.
-- - ai0302: Anteil betreute Kinder 0-2 Jahre in Tagespflege am 01.03.
-- - ai0303: Anteil betreute Kinder 3-5 Jahre in Tageseinrichtungen am 01.03.
-
-- Schulabgänger/-innen ai003_2
-- - ai0304: Anteil Schulabgänger/-innen mit allgem. Hochschulreife
-- - ai0305: Anteil Schulabgänger/-innen ohne Hauptschulabschluss
-
-- Betreuungsquote ai003_3
-- - ai0306: Betreuungsquote 0 bis 2 Jahre am 01.03.
-- - ai0307: Betreuungsquote 3 bis 5 Jahre am 01.03.
-
-- Erwerbstätige (ET) nach Wirtschaftsbereichen ai007_1
-- - ai0701: Arbeitsplatzdichte
-- - ai0702: Anteil ET Land- u. Forstwirtschaft, Fischerei
-- - ai0703: Anteil ET Produzierendes Gewerbe
-- - ai0704: Anteil ET Verarbeitendes Gewerbe
-- - ai0705: Anteil ET Baugewerbe
-- - ai0706: Anteil ET Dienstleistungsbereiche
-- - ai077: Anteil ET Handel, Verkehr, Gastgewerbe, Informat., Kommun.
-- - ai0708: Anteil ET Finanz-, Versich.-, Unt.-dl., Grundst.-, Wohnungsw.
-- - ai0709: Anteil ET Öffentl. u. sonst. Dienstl., Erziehung, Gesundh.
-
-- Arbeitslosenquote ausgewählte Personengruppen: ai008_2
-- - ai0802: Arbeitslosenquote Männer
-- - ai0803: Arbeitslosenquote Frauen
-- - ai0804: Arbeitslosenquote 15 bis 24 Jahre
-- - ai0805: Arbeitslosenquote Ausländerinnen und Ausländer
-
-- Flächennutzung nach ALKIS: ai001_2_5
-- - ai006: Anteil der Fläche für Siedlung an Gesamtfläche
-- - ai007: Anteil der Fläche für Verkehr an Gesamtfläche
-- - ai008: Anteil der Fläche für Landwirtschaft an Gesamtfläche
-- - ai009: Anteil der Fläche für Wald an Gesamtfläche
-- - ai010: Anteil Sport-, Freizeit-, Erholungsfläche an Gesamtfläche
-- - ai011: Anteil Siedlungs- und Verkehrsfläche an Gesamtfläche
-- - ai013: Siedlungs- und Verkehrsfläche je EW
-- - ai014: Freiraumfläche je EW
-
-- Flächennutzung nach ALB: ai001_5
-- - ai0101: Anteil Siedlungs- und Verkehrsfläche an Gesamtfläche
-- - ai0102: Anteil Erholungsfläche an Gesamtfläche
-- - ai0103: Anteil Landwirtschaftsfläche an Gesamtfläche
-- - ai0104: Anteil Waldfläche an Gesamtfläche
-
-- Elterngeldbezug: aig_018
-- - ai1801: Elterngeldbezug Vater
-
-- Krankenhäuser: ai014_1
-- - ai1401: Krankenhausbettendichte (Betten je 1.000 EW)
-
-- Pflege und Personal: ai014_2
-- - ai1402: Pflegebedürftige je 1.000 EW ab 65 Jahre
-- - ai1403: Personal je 100 Pflegebedürftige in vollstationären Pflege
-- - ai1404: Personal je 100 Pflegebedürftige in ambulanter Pflege
-- - ai1405: Plätze in Pflegeheimen je 1.000 EW ab 65 Jahre
-
-- Investitionen: ai010_1
-- - ai1001: Investitionen je Beschäftigten
-
-- Bruttoentgelte: ai010_2_5
-- - ai1002: Bruttoentgelte je Beschäftigten
-
-- Landwirtschaftl. Betriebe - Viehhaltung: ai009
-- - ai0901: Durchschnittliche Betriebsgröße
-- - ai0902: Rinder je 100 ha landwirtschaftlich genutzter Fläche 
-- - ai0903: Schweine je 100 ha landwirtschaftlich genutzter Fläche 
-
-- Pkw-Dichte: ai_n_08_01 oder ai013_1
-- - ai1301: Pkw-Bestand je 1.000 EW am 01.01.
-
-- Beschäftigte im öffentlichen Bereich: ai015
-- - ai1501: Beschäftigte Bund, Länder, Gemeinden/-verbände je 1.000 EW
-
-- Verfügbares Einkommen je EW: ai_s_01
-- - ai1601: Verfügbares Einkommen je EW
-
-- Armutsgefährdung: ai_s_02
-- - ai2301: Armutsgefährdungsquote (Bundesmedian)
-- - ai2302: Armutsgefährdungsquote (regionaler Median)
-
-- Grundsicherung für Arbeitssuchende (SGB II): ai_s_04
-- - ai2102: SGB II-Quote bis Altersgrenze
-- - ai2108:  Quote erwerbsfähige SGB II-Leistungsberechtigte
-- - ai2109:  Quote erwerbsfähige SGB II-Leistungsberechtigte Frauen
-- - ai2110:  Quote erwerbsfähige SGB II-Leistungsberechtigte Männer
-- - ai2105:  Anteil Empfänger/-innen Arbeitslosengeld II bis 24 Jahre
-- - ai2106:  Anteil Empfänger/-innen Arbeitslosengeld II ab 55 Jahre
-- - ai2107: Anteil Kinder mit Bezug von Sozialgeld
-
-- Beherbergung: ai012_5
-- - ai1201: Durchschnittliche Aufenthaltsdauer
-- - ai1202: Übernachtungen je EW
-
-- Wasserversorgung, Wasserabgabe: ai019_2
-- - 1908: Wasserabgabe je EW und Tag (in Liter)
-
-- Wasserentgelt: ai019_1_5
-- - 1906: verbrauchsabhängig. Entgelt Trinkwasserversorgung pro m³
-- - 1907: verbrauchsunabhängig. Entgelt für Trinkwasserversorgung
-
-- Haushaltsabfälle: ai019
-- - ai1901: Haushaltsabfälle je EW
-- - ai1902: Haus- und Sperrmüll je EW
-- - ai1903: Getrennt erfasste Wertstoffe je EW
-- - ai1904: Abfälle aus der Biotonne je EW
-- - ai1905: Biologisch abbaubare Garten- und Parkabfälle je EW
-
-- Gewerbeanmeldungen: ai004_1
-- - ai0401: Gewerbeanmeldungen je 10.000 EW
-
-- Unternehmensinsolvenzen: ai004_2	
-- - ai0402: Unternehmensinsolvenzen je 10.000 steruerpfl. Unternehmen
-
-- Verfügbares Einkommen: ai016_1
-- - ai1601: Verfügbares Einkommen je EW
-
-- Einkünfte: ai016_2_5
-- - ai1602: Gesamtbetrag der Einkünfte je Steuerpflichtigen
-
-- Straßenverkehrsunfälle bezogen auf EW: ai013_2
-- - ai1302: Straßenverkehrsunfälle je 10.000 EW
-- - ai1304: Getötete bei Straßenverkehrsunfällen je 100.000 EW
-- - ai1305: Verletzte bei Straßenverkehrsunfällen je 100.000 EW
-
-- Bundestagswahl: ai005
-- - ai0501: Zweitstimmenanteil CDU/CSU, Bundestagswahl
-- - ai0502: Zweitstimmenanteil SPD, Bundestagswahl
-- - ai0503: Zweitstimmenanteil FDP, Bundestagswahl
-- - ai0504: Zweitstimmenanteil GRÜNE, Bundestagswahl
-- - ai0505: Zweitstimmenanteil DIE LINKE, Bundestagswahl
-- - ai0507: Zweitstimmenanteil AfD, Bundestagswahl
-- - ai0506: Wahlbeteiligung, Bundestagswahl
-
-- Europawahl: ai006
-- - ai0601: Stimmenanteil CDU/CSU, Europawahl
-- - ai0602: Stimmenanteil SPD, Europawahl
-- - ai0603: Stimmenanteil FDP, Europawahl
-- - ai0604: Stimmenanteil GRÜNE, Europawahl
-- - ai0605: Stimmenanteil DIE LINKE, Europawahl
-- - ai0607: Stimmenanteil AfD, Europawahl
-- - ai0606: Wahlbeteiligung, Europawahl
-
-- Erwerbstätigkeit: ai_z2_2011
-- - ai_z08: Erwerbslosenquote
-- - ai_z09: Erwerbstätigenquote
-- - ai_z10: Erwerbstätigenquote Frauen
-- - ai_z11: Erwerbstätigenquote Männer
-
-- Wohn- und Gebäudezählung: ai_z4_2011
-- - ai_z15: Wohnungen je Wohngebäude
-- - ai_z16: Eigentümerquote
-- - ai_z17: Leerstandsquote
-- - ai_z18: Durchschnittliche Wohnfläche je EW
-- - ai_z19: Durchschnittliche Wohnfläche je Wohnung
 
 
 
