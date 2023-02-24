@@ -28,7 +28,7 @@ class TestDefaultApi(unittest.TestCase):
     def test_query(self):
         """Test case for query
 
-        publicwebpageplus  # noqa: E501
+        query  # noqa: E501
         """
         pass
 

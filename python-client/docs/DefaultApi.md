@@ -4,13 +4,13 @@ All URIs are relative to *https://www.gis-idmz.nrw.de/arcgis/rest/services/stba/
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**query**](DefaultApi.md#query) | **GET** /query | publicwebpageplus
+[**query**](DefaultApi.md#query) | **GET** /query | query
 
 
 # **query**
 > {str: (bool, date, datetime, dict, float, int, list, str, none_type)} query(f, return_geometry, spatial_rel, where)
 
-publicwebpageplus
+query
 
 Die gewünschten Daten lassen sich über GET-Parameter im Query-String spezifizieren. 
 
@@ -41,7 +41,7 @@ with Regionalatlas.ApiClient() as api_client:
 
     # example passing only required values which don't have defaults set
     try:
-        # publicwebpageplus
+        # query
         api_response = api_instance.query(f, return_geometry, spatial_rel, where)
         pprint(api_response)
     except Regionalatlas.ApiException as e:
@@ -50,7 +50,7 @@ with Regionalatlas.ApiClient() as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        # publicwebpageplus
+        # query
         api_response = api_instance.query(f, return_geometry, spatial_rel, where, out_fields=out_fields)
         pprint(api_response)
     except Regionalatlas.ApiException as e:

@@ -73,7 +73,7 @@ with Regionalatlas.ApiClient(configuration) as api_client:
     out_fields = "*" # str | Auszugebende Variablen/fields (z.B. '*'). (optional)
 
     try:
-        # publicwebpageplus
+        # query
         api_response = api_instance.query(layer, f, return_geometry, spatial_rel, where, out_fields=out_fields)
         pprint(api_response)
     except Regionalatlas.ApiException as e:
@@ -86,7 +86,7 @@ All URIs are relative to *https://www.gis-idmz.nrw.de/arcgis/rest/services/stba/
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**query**](docs/DefaultApi.md#query) | **GET** /query | publicwebpageplus
+*DefaultApi* | [**query**](docs/DefaultApi.md#query) | **GET** /query | query
 
 
 ## Documentation For Models
