@@ -9,13 +9,13 @@ Regionalatlas.api.default\_api module
 
 .. automodule:: Regionalatlas.api.default_api
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: Regionalatlas.api
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

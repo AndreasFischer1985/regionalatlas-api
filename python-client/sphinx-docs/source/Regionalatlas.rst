@@ -20,45 +20,45 @@ Regionalatlas.api\_client module
 
 .. automodule:: Regionalatlas.api_client
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Regionalatlas.configuration module
 ----------------------------------
 
 .. automodule:: Regionalatlas.configuration
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Regionalatlas.exceptions module
 -------------------------------
 
 .. automodule:: Regionalatlas.exceptions
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Regionalatlas.model\_utils module
 ---------------------------------
 
 .. automodule:: Regionalatlas.model_utils
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Regionalatlas.rest module
 -------------------------
 
 .. automodule:: Regionalatlas.rest
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: Regionalatlas
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
