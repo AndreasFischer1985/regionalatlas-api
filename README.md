@@ -59,11 +59,15 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |Anteil Waldfläche an Gesamtfläche|AI0104|Prozent|Flächennutzung nach ALB|AI001-5|Gebiet und Fläche|
 |Bevölkerungsdichte (EW je qkm)|AI0201|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
 |Bevölkerungsentwicklung im Jahr je 10.000 EW|AI0202|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
-|Anteil der ausländischen Bevölkerung  an der Gesamtbevölkerung|AI0208|Prozent|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Anteil der ausländischen Bevölkerung an der Gesamtbevölkerung|AI0208|Prozent|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
 |Lebendgeborene je 1.000 EW|AI0209|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
 |Gestorbene je 1.000 EW|AI0210|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
 |Geburten-/Gestorbenenüberschuss je 10.000 EW|AI0211|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
 |Wanderungssaldo je 10.000 EW|AI0212|Anzahl|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Bevölkerungsdichte (EW je qkm) (Veränderungsrate)|AI0201V|Prozent|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Anteil der ausländischen Bevölkerung an der Gesamtbevölkerung (Veränderungsrate in Prozentpunkten)|AI0208V|PP|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Lebendgeborene je 1.000 EW (Veränderungsrate)|AI0209V|Prozent|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
+|Gestorbene je 1.000 EW (Veränderungsrate)|AI0210V|Prozent|Bevölkerungsstand - Geburten - Gestorbene - Wanderungen|AI002-1-5|Bevölkerung|
 |Bevölkerung 0 bis 17 Jahre|AI0203|Prozent|Bevölkerung nach Alter|AI002-2-5|Bevölkerung|
 |Bevölkerung 18 bis 24 Jahre|AI0204|Prozent|Bevölkerung nach Alter|AI002-2-5|Bevölkerung|
 |Bevölkerung 25 bis 44 Jahre|AI0205|Prozent|Bevölkerung nach Alter|AI002-2-5|Bevölkerung|
@@ -73,6 +77,7 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |Wanderungssaldo je 10.000: Frauen 18 bis 29 Jahre|AI0214|Anzahl|Wanderungen nach Geschlecht und- Alter|AI002-3|Bevölkerung|
 |Durchschnittsalter der Bevölkerung|AI0218|Anzahl|Bevölkerung - Durchschnittsalter|AI002-4-5|Bevölkerung|
 |Durchschnittsalter der Mutter bei der Geburt des 1. Kindes|AI0219|Anzahl|Bevölkerung - Durchschnittsalter|AI002-4-5|Bevölkerung|
+|Durchschnittsalter der Bevölkerung (Veränderungsrate in Jahren)|AI0218V|Anzahl|Bevölkerung - Durchschnittsalter|AI002-4-5|Bevölkerung|
 |Einbürgerungsquote|AI0220|Prozent|Einbürgerungen|AI002-5|Bevölkerung|
 |Anteil betreute Kinder 0-2 Jahre in Tageseinrichtungen am 01.03.|AI0301|Prozent|Betreute Kinder in Tagespflege/Tageseinrichtungen|AI003-1|Bildung|
 |Anteil betreute Kinder 0-2 Jahre in Tagespflege am 01.03.|AI0302|Prozent|Betreute Kinder in Tagespflege/Tageseinrichtungen|AI003-1|Bildung|
@@ -101,6 +106,10 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |AB im Gesundheits- und Sozialwesen je 1.000 EW im erwerbsf. Alter|AI0418|Anzahl|Statistisches Unternehmensregister: Abhängig Beschäftigte (AB) je 1.000 EW|AI004-3|Unternehmen|
 |AB in Kunst, Unterh. und Erholung je 1.000 EW im erwerbsf. Alter|AI0419|Anzahl|Statistisches Unternehmensregister: Abhängig Beschäftigte (AB) je 1.000 EW|AI004-3|Unternehmen|
 |AB in sonstigen Dienstleistungen je 1.000 EW im erwerbsf. Alter|AI0420|Anzahl|Statistisches Unternehmensregister: Abhängig Beschäftigte (AB) je 1.000 EW|AI004-3|Unternehmen|
+|Anteil der Gründungen an der Anzahl der Bestandsunternehmen im jeweiligen Gebiet |AI0451|Prozent|Unternehmensdemografie|AI004-4|Unternehmen|
+|Anteil der Schließungen an der Anzahl der Bestandsunternehmen im jeweiligen Gebiet |AI0452|Prozent|Unternehmensdemografie|AI004-4|Unternehmen|
+|Anzahl der Gründungen je 1.000 erwerbsfähigen Personen (18 bis unter 66 Jahre) im jeweiligen Gebiet|AI0453|Anzahl|Unternehmensdemografie|AI004-4|Unternehmen|
+|Anzahl der Schließungen je 1.000 erwerbsfähigen Personen (18 bis unter 66 Jahre) im jeweil. Gebiet|AI0454|Anzahl|Unternehmensdemografie|AI004-4|Unternehmen|
 |Zweitstimmenanteil CDU/CSU, Bundestagswahl|AI0501|Prozent|Bundestagswahl|AI005|Wahlen|
 |Zweitstimmenanteil SPD, Bundestagswahl|AI0502|Prozent|Bundestagswahl|AI005|Wahlen|
 |Zweitstimmenanteil FDP, Bundestagswahl|AI0503|Prozent|Bundestagswahl|AI005|Wahlen|
@@ -129,7 +138,8 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |Anteil Arbeitslose 15-24 Jahre an Arbeitslosen insgesamt|AI0806|Prozent|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
 |Anteil Arbeitslose 55-64 Jahre an Arbeitslosen insgesamt|AI0807|Prozent|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
 |Anteil Langzeitarbeitslose an Arbeitslosen insgesamt|AI0808|Prozent|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
-|Anteil der ausl. Arbeitslosen an Arbeitslosen insgesamt |AI0809|Prozent|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
+|Anteil der ausl. Arbeitslosen an Arbeitslosen insgesamt|AI0809|Prozent|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
+|Arbeitslosenquote (Veränderungsrate in Prozentpunkten)|AI0801V|PP|Arbeitslosenquote, Anteil Arbeitslose|AI008-1-5|Erwerbstätigkeit und Arbeitslosigkeit|
 |Arbeitslosenquote Männer|AI0802|Prozent|Arbeitslosenquote für ausgewählte Personengruppen|AI008-2|Erwerbstätigkeit und Arbeitslosigkeit|
 |Arbeitslosenquote Frauen|AI0803|Prozent|Arbeitslosenquote für ausgewählte Personengruppen|AI008-2|Erwerbstätigkeit und Arbeitslosigkeit|
 |Arbeitslosenquote 15 bis 24 Jahre|AI0804|Prozent|Arbeitslosenquote für ausgewählte Personengruppen|AI008-2|Erwerbstätigkeit und Arbeitslosigkeit|
@@ -143,7 +153,9 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |Fertiggestellte Wohnungen je 1.000 EW|AI1102|Anzahl|Bautätigkeit und Wohnen|AI011-5|Bauen und Wohnen|
 |Durchschnittliche Aufenthaltsdauer|AI1201|Tage|Beherbergung|AI012-5|Tourismus|
 |Übernachtungen je EW|AI1202|Anzahl|Beherbergung|AI012-5|Tourismus|
+|Übernachtungen je EW (Veränderungsrate)|AI1202V|Prozent|Beherbergung|AI012-5|Tourismus|
 |Pkw-Bestand je 1.000 EW am 01.01.|AI1301|Anzahl|Pkw-Dichte|AI013-1|Verkehr|
+|Pkw-Bestand je 1.000 EW am 01.01. (Veränderungsrate)|AI1301V|Prozent|Pkw-Dichte|AI013-1|Verkehr|
 |Straßenverkehrsunfälle je 10.000 EW|AI1302|Anzahl|Straßenverkehrsunfälle bezogen auf EW|AI013-2|Verkehr|
 |Getötete bei Straßenverkehrsunfällen je 100.000 EW|AI1304|Anzahl|Straßenverkehrsunfälle bezogen auf EW|AI013-2|Verkehr|
 |Verletzte bei Straßenverkehrsunfällen je 100.000 EW|AI1305|Anzahl|Straßenverkehrsunfälle bezogen auf EW|AI013-2|Verkehr|
@@ -154,11 +166,11 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |Personal je 100 Pflegebedürftige in ambulanter Pflege|AI1404|Anzahl|Pflege und Personal|AI014-2|Gesundheits- und Sozialwesen|
 |Plätze in Pflegeheimen je 1.000 EW ab 65 Jahre|AI1405|Anzahl|Pflege und Personal|AI014-2|Gesundheits- und Sozialwesen|
 |Beschäftigte Bund, Länder, Gemeinden/-verbände je 1.000 EW|AI1501|Anzahl|Beschäftigte im öffentlichen Bereich|AI015|Öffentliche Haushalte|
-|Verfügbares Einkommen je EW|AI1601|EUR|Verfügbares Einkommen|AI016-1|Verdienste und Einkommen|
+|Verfügbares Einkommen pro Kopf|AI1601|EUR|Verfügbares Einkommen|AI016-1|Verdienste und Einkommen|
 |Gesamtbetrag der Einkünfte je Steuerpflichtigen|AI1602|Tsd. EUR|Einkünfte|AI016-2-5|Verdienste und Einkommen|
 |BIP je Erwerbstätigen|AI1701|EUR|Bruttoinlandsprodukt (BIP)|AI017-1|Bruttoinlandsprodukt und Bruttowertschöpfung|
 |Veränderung des BIP zum Vorjahr|AI1702|Prozent|Bruttoinlandsprodukt (BIP)|AI017-1|Bruttoinlandsprodukt und Bruttowertschöpfung|
-|BIP je EW|AI1703|EUR|Bruttoinlandsprodukt (BIP)|AI017-1|Bruttoinlandsprodukt und Bruttowertschöpfung|
+|BIP pro Kopf|AI1703|EUR|Bruttoinlandsprodukt (BIP)|AI017-1|Bruttoinlandsprodukt und Bruttowertschöpfung|
 |BWS Land- und Forstwirtschaft, Fischerei|AI1705|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
 |BWS Produzierendes Gewerbe|AI1706|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
 |BWS Verarbeitendes Gewerbe|AI1707|Prozent|Bruttowertschöpfung (BWS)|AI017-2|Bruttoinlandsprodukt und Bruttowertschöpfung|
@@ -172,9 +184,11 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |Getrennt erfasste Wertstoffe je EW|AI1903|kg|Haushaltsabfälle|AI019|Umwelt|
 |Abfälle aus der Biotonne je EW|AI1904|kg|Haushaltsabfälle|AI019|Umwelt|
 |Biologisch abbaubare Garten- und Parkabfälle je EW|AI1905|kg|Haushaltsabfälle|AI019|Umwelt|
+|Haushaltsabfälle je EW (Veränderungsrate)|AI1901V|Prozent|Haushaltsabfälle|AI019|Umwelt|
 |verbrauchsabhängig. Entgelt Trinkwasserversorgung pro m³|AI1906|EUR|Wasserentgelt|AI019-1-5|Umwelt|
 |verbrauchsunabhängig. Entgelt für Trinkwasserversorgung|AI1907|EUR|Wasserentgelt|AI019-1-5|Umwelt|
 |Wasserabgabe je EW und Tag (in Liter)|AI1908|l|Wasserversorgung, Wasserabgabe|AI019-2|Umwelt|
+|Anteilig beschlammte Fläche|AI1909|Prozent|Klärschlamm in der Landwirtschaft|AI019-3-5|Umwelt|
 |Väteranteil Elterngeldbezug|AI1801|Prozent|Elterngeldbezug|AIG-018|Gender|
 |Anteil betreute Kinder 0-2 Jahre in Tageseinrichtungen am 01.03.|AI0301|Prozent|Kinderbetreuung|AIG-03-1|Gender|
 |Anteil betreute Kinder 0-2 Jahre in Tagespflege am 01.03.|AI0302|Prozent|Kinderbetreuung|AIG-03-1|Gender|
@@ -227,13 +241,16 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |Pkw-Bestand je 1.000 EW am 01.01.|AI1301|Anzahl|Pkw-Dichte|AI-N-08-01|Nachhaltigkeit|
 |Getötete bei Straßenverkehrsunfällen je 100.000 EW|AI1304|Anzahl|Straßenverkehr|AI-N-08-02|Nachhaltigkeit|
 |Armutsgefährdungsquote (Bundesmedian)|AI2301|Prozent|Armutsgefährdung|AI-N-09|Nachhaltigkeit|
-|BIP je EW|AI1703|EUR|Wirtschaftliche Leistungsfähigkeit - BIP je EW|AI-N-10|Nachhaltigkeit|
+|BIP pro Kopf|AI1703|EUR|Wirtschaftliche Leistungsfähigkeit - BIP je EW|AI-N-10|Nachhaltigkeit|
+|BIP pro Kopf (Veränderungsrate)|AI1703V|Prozent|Wirtschaftliche Leistungsfähigkeit - BIP je EW|AI-N-10|Nachhaltigkeit|
 |BIP je Arbeitsstunde|AI1704|EUR|Wirtschaftliche Leistungsfähigkeit - BIP je Arbeitsst.|AI-N-11|Nachhaltigkeit|
 |Haushaltsabfälle je EW|AI1901|kg|Umwelt|AI-N-12|Nachhaltigkeit|
-|Verfügbares Einkommen je EW|AI1601|EUR|Verfügbares Einkommen je EW|AI-S-01|Soziales|
+|Haushaltsabfälle je EW (Veränderungsrate)|AI1901V|Prozent|Umwelt|AI-N-12|Nachhaltigkeit|
+|Verfügbares Einkommen pro Kopf|AI1601|EUR|Verfügbares Einkommen pro Kopf|AI-S-01|Soziales|
 |Armutsgefährdungsquote (Bundesmedian)|AI2301|Prozent|Armutsgefährdung|AI-S-02|Soziales|
 |Armutsgefährdungsquote (regionaler Median)|AI2302|Prozent|Armutsgefährdung|AI-S-02|Soziales|
 |Mindestsicherungsquote|AI2001|Prozent|Mindestsicherungsleistungen|AI-S-03|Soziales|
+|Mindestsicherungsquote (Veränderungsrate in Prozentpunkten)|AI2001V|PP|Mindestsicherungsleistungen|AI-S-03|Soziales|
 |SGB II-Quote bis Altersgrenze|AI2102|Prozent|Grundsicherung für Arbeitssuchende (SGB II)|AI-S-04|Soziales|
 |Quote erwerbsfähige SGB II-Leistungsberechtigte|AI2108|Prozent|Grundsicherung für Arbeitssuchende (SGB II)|AI-S-04|Soziales|
 |Quote erwerbsfähige SGB II-Leistungsberechtigte Frauen|AI2109|Prozent|Grundsicherung für Arbeitssuchende (SGB II)|AI-S-04|Soziales|
@@ -264,7 +281,6 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |Leerstandsquote|AI-Z17|Prozent|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
 |Durchschnittliche Wohnfläche je EW|AI-Z18|m²|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
 |Durchschnittliche Wohnfläche je Wohnung|AI-Z19|m²|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
-
 
 
 
