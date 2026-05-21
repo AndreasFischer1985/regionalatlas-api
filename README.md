@@ -106,8 +106,8 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |AB im Gesundheits- und Sozialwesen je 1.000 EW im erwerbsf. Alter|AI0418|Anzahl|Statistisches Unternehmensregister: Abhängig Beschäftigte (AB) je 1.000 EW|AI004-3|Unternehmen|
 |AB in Kunst, Unterh. und Erholung je 1.000 EW im erwerbsf. Alter|AI0419|Anzahl|Statistisches Unternehmensregister: Abhängig Beschäftigte (AB) je 1.000 EW|AI004-3|Unternehmen|
 |AB in sonstigen Dienstleistungen je 1.000 EW im erwerbsf. Alter|AI0420|Anzahl|Statistisches Unternehmensregister: Abhängig Beschäftigte (AB) je 1.000 EW|AI004-3|Unternehmen|
-|Anteil der Gründungen an der Anzahl der Bestandsunternehmen im jeweiligen Gebiet |AI0451|Prozent|Unternehmensdemografie|AI004-4|Unternehmen|
-|Anteil der Schließungen an der Anzahl der Bestandsunternehmen im jeweiligen Gebiet |AI0452|Prozent|Unternehmensdemografie|AI004-4|Unternehmen|
+|Anteil der Gründungen an der Anzahl der Bestandsunternehmen im jeweiligen Gebiet|AI0451|Prozent|Unternehmensdemografie|AI004-4|Unternehmen|
+|Anteil der Schließungen an der Anzahl der Bestandsunternehmen im jeweiligen Gebiet|AI0452|Prozent|Unternehmensdemografie|AI004-4|Unternehmen|
 |Anzahl der Gründungen je 1.000 erwerbsfähigen Personen (18 bis unter 66 Jahre) im jeweiligen Gebiet|AI0453|Anzahl|Unternehmensdemografie|AI004-4|Unternehmen|
 |Anzahl der Schließungen je 1.000 erwerbsfähigen Personen (18 bis unter 66 Jahre) im jeweil. Gebiet|AI0454|Anzahl|Unternehmensdemografie|AI004-4|Unternehmen|
 |Zweitstimmenanteil CDU/CSU, Bundestagswahl|AI0501|Prozent|Bundestagswahl|AI005|Wahlen|
@@ -203,13 +203,13 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |Grundsicherungsquote Männer ab Altersgrenze|AI2203|Prozent|Grundsicherung|AIG-22|Gender|
 |Grundsicherungsquote Frauen ab Altersgrenze|AI2204|Prozent|Grundsicherung|AIG-22|Gender|
 |Index Grundsicherungsquote|AI2205|Prozent|Grundsicherung|AIG-22|Gender|
-|Anteil Männer am pädag. Personal in Kindertageseinrichtungen am 01.03.|AI2401|Prozent|Männliches pädagogisches Personal|AIG-24|Gender|
+|Anteil Männer am pädag. Personal in Kindertageseinrichtungen am 01.03|AI2401|Prozent|Männliches pädagogisches Personal|AIG-24|Gender|
 |Gesundheitsausgaben je Einwohner/-in|GSAUS201|EUR|Gesundheitsausgaben|AIGG-01|Gesundheitsökonomische Gesamtrechnungen|
 |Anteil der Ausgaben der Gesetzlichen Krankenversicherung (GKV) an den gesamten Gesundheitsausgaben|GSAAI22|Prozent|Gesundheitsausgaben|AIGG-01|Gesundheitsökonomische Gesamtrechnungen|
 |Anteil der Ausgaben der Privaten Krankenversicherung (PKV) an den gesamten Gesundheitsausgaben|GSAAI26|Prozent|Gesundheitsausgaben|AIGG-01|Gesundheitsökonomische Gesamtrechnungen|
 |Anteil der Ausgaben der Sozialen Pflegeversicherung (SPV) an den gesamten Gesundheitsausgaben|GSAAI23|Prozent|Gesundheitsausgaben|AIGG-01|Gesundheitsökonomische Gesamtrechnungen|
 |Ant. d. Ausgaben der Priv. Haush. u. Organisationen o. Erwerbszweck a. d. ges. Gesundheitsausgaben|GSAAI28|Prozent|Gesundheitsausgaben|AIGG-01|Gesundheitsökonomische Gesamtrechnungen|
-|Gesundheitspersonal je 1.000 Einwohner/-innen am 31.12.|GSP102|Anzahl|Gesundheitspersonal|AIGG-02|Gesundheitsökonomische Gesamtrechnungen|
+|Gesundheitspersonal je 1 000 Einwohner/-innen am 31.12.|GSP102|Anzahl|Gesundheitspersonal|AIGG-02|Gesundheitsökonomische Gesamtrechnungen|
 |Gesundheitspersonal je 1.000 Einwohner/-innen in Arztpraxen|GSPAI121|Anzahl|Gesundheitspersonal|AIGG-02|Gesundheitsökonomische Gesamtrechnungen|
 |Gesundheitspersonal je 1.000 Einwohner/-innen in Zahnarztpraxen|GSPAI122|Anzahl|Gesundheitspersonal|AIGG-02|Gesundheitsökonomische Gesamtrechnungen|
 |Gesundheitspersonal je 1.000 Einwohner/-innen in Apotheken|GSPAI124|Anzahl|Gesundheitspersonal|AIGG-02|Gesundheitsökonomische Gesamtrechnungen|
@@ -281,6 +281,7 @@ Gültige Einträge für die *tableName* finden sich unter [https://regionalatlas
 |Leerstandsquote|AI-Z17|Prozent|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
 |Durchschnittliche Wohnfläche je EW|AI-Z18|m²|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
 |Durchschnittliche Wohnfläche je Wohnung|AI-Z19|m²|Wohn- und Gebäudezählung|AI-Z4-2011|Zensus|
+
 
 
 
